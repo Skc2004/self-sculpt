@@ -1,0 +1,25 @@
+# Core ML
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.24.0
+
+# API
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+Pillow>=10.0.0
+
+# Training infrastructure
+tensorboard>=2.14.0
+pyyaml>=6.0
+
+# Caching (optional)
+redis>=5.0.0
+
+# Testing & code quality
+pytest>=7.4.0
+black>=23.0.0
+ruff>=0.1.0

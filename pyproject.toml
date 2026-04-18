@@ -1,0 +1,26 @@
+[project]
+name = "self-pruning-nn"
+version = "1.0.0"
+description = "Self-pruning neural network with differentiable gate parameters for automatic weight pruning on CIFAR-10"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+select = ["E", "F", "W", "I", "N", "UP"]
+ignore = ["E501"]  # line length handled by black
+
+[tool.ruff.isort]
+known-first-party = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = "-v --tb=short"
