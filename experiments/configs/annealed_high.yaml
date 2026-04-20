@@ -1,0 +1,9 @@
+# Annealed high — linear warmup schedule, high final lambda
+# Linear warmup: λ increases at a constant rate after warmup.
+# Aggressive pruning but with a grace period for learning.
+lambda_max: 0.01
+schedule_mode: linear
+warmup_epochs: 10
+gate_strategy: sigmoid
+sparsity_norm: L1
+learning_rate: 0.001

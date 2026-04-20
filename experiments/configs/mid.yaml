@@ -1,0 +1,7 @@
+# Mid lambda — moderate pruning, good accuracy-sparsity trade-off
+lambda_max: 0.001
+schedule_mode: static
+warmup_epochs: 5
+gate_strategy: sigmoid
+sparsity_norm: L1
+learning_rate: 0.001

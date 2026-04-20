@@ -1,0 +1,9 @@
+# Annealed mid — cosine warmup schedule, moderate final lambda
+# The cosine schedule ramps λ slowly at first (letting the network learn),
+# then accelerates pruning pressure toward the end of training.
+lambda_max: 0.001
+schedule_mode: cosine
+warmup_epochs: 10
+gate_strategy: sigmoid
+sparsity_norm: L1
+learning_rate: 0.001

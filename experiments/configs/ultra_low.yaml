@@ -1,0 +1,7 @@
+# Ultra-low lambda — minimal pruning, near-baseline accuracy
+lambda_max: 0.00001
+schedule_mode: static
+warmup_epochs: 5
+gate_strategy: sigmoid
+sparsity_norm: L1
+learning_rate: 0.001

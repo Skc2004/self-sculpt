@@ -1,0 +1,7 @@
+# High lambda — aggressive pruning, expect accuracy drop
+lambda_max: 0.01
+schedule_mode: static
+warmup_epochs: 5
+gate_strategy: sigmoid
+sparsity_norm: L1
+learning_rate: 0.001
